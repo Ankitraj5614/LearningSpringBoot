@@ -1,13 +1,8 @@
-package com.SpaceTech.entities;
+package com.SpaceTech.practice;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
-@Entity
-@Table(name = "ajay")
 public class Student {
-	@Id
+	
 	private int id;
 	
 	private String sname;
