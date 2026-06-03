@@ -1,5 +1,7 @@
 package com.SpaceTech.entities;
 
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 

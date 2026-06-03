@@ -1,5 +1,7 @@
 package com.SpaceTech.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +18,11 @@ public class BookServiceImpl implements BookService {
 	public Book saveBook(Book book) {
 		Book savedData =repo.save(book);
 		return savedData;
+	}
+
+	@Override
+	public List<Book> findAllBooks() {
+		List<Book> br = (List<Book>) repo.findAll();
+		return br;
 	}
 }

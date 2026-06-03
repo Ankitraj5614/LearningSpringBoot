@@ -1,12 +1,16 @@
 package com.SpaceTech;
 
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import com.SpaceTech.entities.Book;
 import com.SpaceTech.practice.Tech;
 import com.SpaceTech.practice.myApplication;
+import com.SpaceTech.service.BookService;
 
 @SpringBootApplication
 
@@ -14,9 +18,13 @@ public class FirstdemoprojectApplication {
 
 	public static void main(String[] args) {
 		 ConfigurableApplicationContext context = SpringApplication.run(FirstdemoprojectApplication.class, args);
-		 Tech  t = (Tech)context.getBean("tech");
-		 t.teach();
-		
+		 BookService bs =(BookService) context.getBean(BookService.class);
+		 
+		 Book book = new Book(3, "Spacex3","Nikhil");
+		 
+		 bs.saveBook(book);
+		 List<Book> bt=bs.findAllBooks();
+		bt.forEach(b->System.out.println(b.getAutheor() + " name of book " + b.getTital()+" number of book " +b.getId()));
 		 
 	}
 
