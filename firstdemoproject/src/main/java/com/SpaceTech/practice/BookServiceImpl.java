@@ -1,13 +1,10 @@
-package com.SpaceTech.serviceimpl;
+//package com.SpaceTech.serviceimpl;
+package com.SpaceTech.practice;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.SpaceTech.entities.Book;
-import com.SpaceTech.repo.BookRepo;
-import com.SpaceTech.service.BookService;
 
 @Service
 public class BookServiceImpl implements BookService {

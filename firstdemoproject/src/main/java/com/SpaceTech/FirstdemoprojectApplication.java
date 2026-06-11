@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.SpaceTech.entities.Book;
+import com.SpaceTech.practice.Book;
+import com.SpaceTech.practice.BookService;
 import com.SpaceTech.practice.Tech;
 import com.SpaceTech.practice.myApplication;
-import com.SpaceTech.service.BookService;
 
 @SpringBootApplication
 
