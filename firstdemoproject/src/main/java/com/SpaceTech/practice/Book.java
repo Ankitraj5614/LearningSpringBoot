@@ -6,9 +6,9 @@ package com.SpaceTech.practice;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
+//@Entity
 public class Book {
-	@Id
+	//@Id
 	private int id;
 	private String tital;
 	private String autheor;

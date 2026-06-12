@@ -6,18 +6,18 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class BookServiceImpl implements BookService {
-	@Autowired
+	//@Autowired
 	private BookRepo repo;
 	
-	@Override
+	//@Override
 	public Book saveBook(Book book) {
 		Book savedData =repo.save(book);
 		return savedData;
 	}
 
-	@Override
+	//@Override
 	public List<Book> findAllBooks() {
 		List<Book> br = (List<Book>) repo.findAll();
 		return br;
