@@ -10,10 +10,10 @@ import jakarta.persistence.Id;
 public class Student1 {
 	@Id
 	//@GeneratedValue(strategy = GenerationType.AUTO) --> It is use for Oracal 
-	@GeneratedValue(strategy = GenerationType.IDENTITY)/* It is use for mySql for auto generation primray key */
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)/* It is use for mySql for auto generation primray key */	
 	@Column(name = "id")
 	private int rollNumber;
+	
 	@Column(name = "StudentName")
 	private String name;
 
