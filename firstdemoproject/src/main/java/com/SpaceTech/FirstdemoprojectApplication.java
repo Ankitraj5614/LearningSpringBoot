@@ -2,27 +2,33 @@ package com.SpaceTech;
 
 
 
+
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
-import com.SpaceTech.entities.Employee;
-import com.SpaceTech.service.EmployeeService;
-
+import com.SpaceTech.entities.Myuser;
+import com.SpaceTech.service.Myuserservice;
 
 
 @SpringBootApplication
 
 public class FirstdemoprojectApplication {
-
+ 
 	public static void main(String[] args) {
 		 ConfigurableApplicationContext context = SpringApplication.run(FirstdemoprojectApplication.class, args);
-		 EmployeeService bs =(EmployeeService) context.getBean(EmployeeService.class);
+		Myuserservice us = (Myuserservice) context.getBean(Myuserservice.class);
 		 
-		 Employee emp = new Employee(12, "ankit", "R. k sahana road koderma ", 23432);
-		 Employee er= bs.saveData(emp);
-		 System.out.println(er.getEid());
+		List<Myuser> list = us.findAllUser();
+		
+		list.forEach(b->System.out.println(b.getId()+" " +b.getuEmail()+" "+b.getCity()+" "+b.getPhone()+" "));
+		//us.saveUser();
+		
+		
+		
+		
 	}
 
 }
