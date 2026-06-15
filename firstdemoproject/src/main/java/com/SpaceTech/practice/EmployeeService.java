@@ -1,17 +1,14 @@
-package com.SpaceTech.service;
+package com.SpaceTech.practice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.SpaceTech.entities.Employee;
-import com.SpaceTech.repo.EmployeeRepo;
-
-@Service
+//@Service
 public class EmployeeService {
-	@Autowired
+	//@Autowired
 	EmployeeRepo repo;
 	public Employee saveData(Employee e) {
-		Employee emp= repo.save(e);
-		return emp;
+		//Employee emp= repo.save(e);
+		return null;
 	}
 }

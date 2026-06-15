@@ -1,4 +1,4 @@
-package com.SpaceTech.serviceimpl;
+package com.SpaceTech.practice;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,14 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.SpaceTech.entities.Myuser;
-import com.SpaceTech.repo.MyuserRepo;
-import com.SpaceTech.service.Myuserservice;
-
 @Service
 public class MyuserServiceImpl implements Myuserservice {
 
-	@Autowired
+//	@Autowired
 	MyuserRepo repo;
 
 	@Override
@@ -28,14 +24,15 @@ public class MyuserServiceImpl implements Myuserservice {
 				new Myuser("sonu", "sonu@gmail.com", "ahuvbac", "7128323433"),
 				new Myuser("punkaj", "punkaj@gmail.com", "xdabsaac", "4123832343"),
 				new Myuser("ankit", "ankit@gmail.com", "huvm", "63128323433"));
-		repo.saveAll(asList);
+	//	repo.saveAll(asList);
 		System.out.println("All user is saved");
 	}
 
 	@Override
 	public List<Myuser> findAllUser() {
-		List<Myuser> all = repo.findAll(Sort.by("phone").ascending().and(Sort.by("uName")));
-		return all;
+		//List<Myuser> all = repo.findAll(Sort.by("phone").ascending().and(Sort.by("uName")));
+		//return all;
+		return null;
 	}
 
 }

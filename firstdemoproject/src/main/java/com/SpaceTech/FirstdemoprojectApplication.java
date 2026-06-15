@@ -4,9 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.SpaceTech.entities.Product;
-import com.SpaceTech.service.ProductService;
-
+import com.SpaceTech.entities.ProductQbe;
+import com.SpaceTech.service.prodService;
 
 
 
@@ -16,13 +15,15 @@ public class FirstdemoprojectApplication {
  
 	public static void main(String[] args) {
 		 ConfigurableApplicationContext context = SpringApplication.run(FirstdemoprojectApplication.class, args);
-		ProductService ps= (ProductService) context.getBean(ProductService.class);
-//		ps.SaveAllProduct();
+		 prodService ps =(prodService) context.getBean(prodService.class);
 		
-		ps.findByProductPriceGratherthan1(27999.99);
-	//	ps.findByProductCategoryName("Camera");
-//		ps.findBYProductName("Lenovo");
-		
+		 ProductQbe pqbe = new ProductQbe();
+		 
+		 pqbe.setBrand("Apple");
+		 ps.getProduct(pqbe);
+		 
+		 System.out.println("the task is completed");
+		 // ps.saveProductQbe();
 	}
 
 }

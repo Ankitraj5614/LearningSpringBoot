@@ -1,14 +1,11 @@
-package com.SpaceTech.serviceimpl;
+package com.SpaceTech.practice;
+//pkage com.SpaceTech.serviceimpl;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.SpaceTech.entities.Student1;
-import com.SpaceTech.repo.Student1Repo;
-import com.SpaceTech.service.Student1Service;
 @Service
 public class Student1ServiceImpl implements Student1Service {
 	@Autowired

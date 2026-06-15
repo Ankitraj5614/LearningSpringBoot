@@ -1,14 +1,15 @@
-package com.SpaceTech.entities;
+package com.SpaceTech.practice.findByMethod;
+//package com.SpaceTech.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity
+//Entity
 public class Product {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id ;
 	
 	private String brand;

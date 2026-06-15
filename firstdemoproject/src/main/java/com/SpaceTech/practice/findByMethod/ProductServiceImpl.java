@@ -1,4 +1,5 @@
-package com.SpaceTech.serviceimpl;
+//package com.SpaceTech.serviceimpl;
+package com.SpaceTech.practice.findByMethod;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,13 +7,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.SpaceTech.entities.Product;
-import com.SpaceTech.repo.ProductRepo;
-import com.SpaceTech.service.ProductService;
-
-@Service
+//@Service
 public class ProductServiceImpl implements ProductService {
-	
+	/*
+	 * 
 	@Autowired
 	ProductRepo repo;
 
@@ -66,6 +64,7 @@ public class ProductServiceImpl implements ProductService {
 			System.out.println(pr.toString());
 		}
 	}
+	 */
 	
 	
 
