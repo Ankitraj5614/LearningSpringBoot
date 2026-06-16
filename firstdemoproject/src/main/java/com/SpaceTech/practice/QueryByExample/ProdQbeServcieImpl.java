@@ -1,4 +1,5 @@
-package com.SpaceTech.serviceimpl;
+package com.SpaceTech.practice.QueryByExample; 
+//package com.SpaceTech.serviceimpl; 
 
 import java.util.List;
 
@@ -6,13 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
-import com.SpaceTech.entities.ProductQbe;
-import com.SpaceTech.repo.ProdRepo;
-import com.SpaceTech.service.prodService;
-
-@Service
-public class ProdQbeServcieImpl implements prodService {
-	
+//@Service
+public class ProdQbeServcieImpl 
+//implements prodService 
+{
+	/*
+	 * 
 	@Autowired
 	ProdRepo repo;
 	@Override
@@ -74,4 +74,5 @@ public class ProdQbeServcieImpl implements prodService {
 		
 	}
 
+	 */
 }

@@ -1,4 +1,5 @@
-package com.SpaceTech.entities;
+//package com.SpaceTech.entities;
+package com.SpaceTech.practice.QueryByExample;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,11 +13,11 @@ import jakarta.persistence.Id;
  *			2)	first create Example interface 
  *			3)	Repo.findAll();
  */
-@Entity
+//@Entity
 public class ProductQbe {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String brand;
