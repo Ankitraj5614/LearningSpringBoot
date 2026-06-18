@@ -1,4 +1,4 @@
-package com.SpaceTech.entities;
+package com.SpaceTech.practice.OneToOne;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
