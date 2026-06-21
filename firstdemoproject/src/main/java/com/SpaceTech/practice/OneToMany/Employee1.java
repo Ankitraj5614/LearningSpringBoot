@@ -1,10 +1,11 @@
-package com.SpaceTech.entities;
+package com.SpaceTech.practice.OneToMany;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
+
 @Entity
 public class Employee1 {
 	@Id
@@ -13,7 +14,7 @@ public class Employee1 {
 	private String ename;
 	private String eaddress;
 	
-	@OneToMany
+	@ManyToOne
 	private Department dept;
 	public int getId() {
 		return id;
